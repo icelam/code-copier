@@ -1,0 +1,53 @@
+{
+  "name": "code-copier",
+  "version": "1.0.0",
+  "description": "Code Copier - Chrome Extension to copy contents inside <pre> and <code> tags",
+  "private": true,
+  "author": "Ice Lam",
+  "license": "ISC",
+  "scripts": {
+    "clean": "rimraf ./dist",
+    "dev:files": "cpx './src/**/*.{html,json}' ./dist --watch --verbose",
+    "dev:images": "cpx './src/assets/images/**/*' ./dist/assets/images --watch --verbose",
+    "dev:js": "./node_modules/.bin/gulp dev-js",
+    "dev:build-css": "node-sass ./src/assets/css --output ./dist/assets/css --include-path node_modules --source-map ./dist/assets/css",
+    "dev:watch-css": "node-sass ./src/assets/css --output ./dist/assets/css --include-path node_modules --watch --recursive --source-map ./dist/assets/css",
+    "dev:css": "npm run dev:build-css && npm run dev:watch-css",
+    "dev": "npm run clean && concurrently \"npm run dev:js\" \"npm run dev:css\" \"npm run dev:files\" \"npm run dev:images\"",
+    "build:files": "cpx './src/**/*.{html,json}' ./dist",
+    "build:images": "cpx './src/assets/images/**/*' ./dist/assets/images",
+    "build:js": "./node_modules/.bin/gulp build-js",
+    "build:css": "node-sass ./src/assets/css --output ./dist/assets/css --quiet --include-path node_modules --output-style compressed",
+    "build": "npm run clean && npm run build:js && npm run build:css && npm run build:files && npm run build:images"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/register": "^7.6.2",
+    "babelify": "^10.0.0",
+    "browserify": "^16.5.0",
+    "concurrently": "^5.0.0",
+    "cpx": "^1.5.0",
+    "eslint": "^5.7.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-import-resolver-webpack": "^0.11.1",
+    "eslint-plugin-import": "^2.16.0",
+    "event-stream": "^4.0.1",
+    "gulp": "^4.0.2",
+    "gulp-load-plugins": "^2.0.1",
+    "node-sass": "^4.12.0",
+    "rimraf": "^3.0.0",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0",
+    "watchify": "^3.11.1"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.6.3",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "vue": "^2.6.10",
+    "webextension-polyfill": "^0.5.0"
+  }
+}

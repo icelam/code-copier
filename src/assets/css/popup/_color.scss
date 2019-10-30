@@ -1,0 +1,52 @@
+$color-white: #ffffff;
+
+$color-grey-98: #fafafa;
+$color-grey-94: #f0f0f0;
+$color-grey-93: #ededed;
+$color-grey-86: #dddddd;
+$color-grey-60: #999999;
+$color-grey-40: #666666;
+$color-grey-20: #333333;
+
+$color-light-blue-grey: #bebdc3;
+$color-mid-blue-grey: #92909a;
+$color-blue-grey: #5d5b68;
+
+$color-blue: #3fb6e9;
+$color-mid-blue: #27aae1; // Primary
+$color-dark-blue: #2598d7;
+
+$color-primary-yellow: #ffce07;
+$color-secondary-yellow: #ffb400;
+
+// base
+$color-body: $color-grey-98;
+$color-body-text: $color-grey-40;
+$color-link: $color-blue;
+$color-link-hover: $color-mid-blue;
+$color-hr: $color-grey-93;
+
+// header
+$color-header-background: $color-primary-yellow;
+$color-header-title: $color-dark-blue;
+$color-header-text: $color-grey-40;
+
+// message block
+$color-message-text: $color-grey-60;
+
+// how to
+$color-how-to-text: $color-grey-60;
+
+// history block
+$color-history-info: $color-mid-blue-grey;
+$color-code-block-border: $color-grey-86;
+$color-code-block-background: $color-white;
+$color-code-block-text: $color-blue-grey;
+
+// tooltip
+$color-tooltip-background: $color-grey-20;
+$color-tooltip-text: $color-white;
+
+// simplebar
+$color-scrollbar: $color-grey-40;
+

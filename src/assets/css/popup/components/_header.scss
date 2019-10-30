@@ -1,0 +1,25 @@
+@import '../color';
+@import '../variables';
+
+.header {
+  background-color: $color-header-background;
+  color: $color-header-text;
+  box-sizing: border-box;
+  width: $body-width;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999999;
+  box-shadow: $shadow-1;
+
+  &__title {
+    color: $color-header-title;
+    margin: 0 0 0.25em 0;
+    font-weight: bold;
+  }
+
+  &__subtitle {
+    margin: 0;
+    font-size: 0.875em;
+  }
+}

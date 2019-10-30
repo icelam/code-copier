@@ -1,0 +1,37 @@
+.settings-button {
+  position: fixed;
+  right: 0.5rem;
+  top: 0.5rem;
+  z-index: 9999999;
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-appearance:none;
+  appearance: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  display: inline-block;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+  text-align: center;
+  opacity: 0.8;
+
+  img {
+    display: block;
+    width: auto;
+    height: 0.75em;
+    filter: invert(52%) sepia(84%) saturate(1654%) hue-rotate(21deg) brightness(93%) contrast(96%);
+
+    &:hover {
+      filter: invert(36%) sepia(29%) saturate(1785%) hue-rotate(18deg) brightness(98%) contrast(97%);
+    }
+  }
+}

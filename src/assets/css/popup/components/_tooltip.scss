@@ -1,0 +1,51 @@
+@import '../color';
+
+[data-tooltip] {
+  position: relative;
+
+  &:before,
+  &:after {
+    z-index: 999999;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  }
+
+  &:before {
+    position: absolute;
+    bottom: 150%;
+    left: 50%;
+    margin: 0 0 0.3125rem 0;
+    padding: 0.25rem 0.5rem;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    border-radius: 0.25em;
+    background-color: rgba($color-tooltip-background, 0.9);
+    color: $color-tooltip-text;
+    content: attr(data-tooltip);
+    text-align: center;
+    font-size: 0.75rem;
+    line-height: 1.2;
+  }
+
+  &:after {
+    position: absolute;
+    bottom: 150%;
+    left: 50%;
+    margin: 0 0 0 -0.3125rem;
+    width: 0;
+    border-top: 0.3125rem solid rgba($color-tooltip-background, 0.9);
+    border-right: 0.3125rem solid transparent;
+    border-left: 0.3125rem solid transparent;
+    content: " ";
+    font-size: 0;
+    line-height: 0;
+  }
+
+  &:hover:before,
+  &:hover:after {
+    visibility: visible;
+    opacity: 1;
+  }
+}
