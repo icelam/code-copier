@@ -13,4 +13,5 @@
 ![Screen Preview](https://github.com/icelam/code-copier/raw/master/resources/chrome-promo/screenshot-2.png)
 
 ## Download Link ##
-TBC
+* Chrome version comming soon.
+* [Download Firefox version](https://addons.mozilla.org/en-US/firefox/addon/code-copier/)
