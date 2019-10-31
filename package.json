@@ -18,7 +18,8 @@
     "build:images": "cpx './src/assets/images/**/*' ./dist/assets/images",
     "build:js": "./node_modules/.bin/gulp build-js",
     "build:css": "node-sass ./src/assets/css --output ./dist/assets/css --quiet --include-path node_modules --output-style compressed",
-    "build": "npm run clean && npm run build:js && npm run build:css && npm run build:files && npm run build:images"
+    "build": "npm run clean && npm run build:js && npm run build:css && npm run build:files && npm run build:images",
+    "pack": "npm run build && cd ./dist && zip -r -FS ../app/code-copier.zip *"
   },
   "devDependencies": {
     "@babel/cli": "^7.6.4",

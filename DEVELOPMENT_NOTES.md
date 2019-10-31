@@ -28,8 +28,9 @@ All the build files can be found in `/dist` folder.
   2. Choose `Load Temporary Add-on`
   3. Select `manifest.json` inside `/dist` folder
 
-
 ### Pack Extension ###
 * Chrome: Zip all content inside `/dist` folder after build, upload the zip file to webstore
 * Firefox: TBC
+
+`npm run pack` has been set to simplify the process.
 
