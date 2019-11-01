@@ -1,6 +1,6 @@
 {
   "name": "code-copier",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Code Copier - Chrome Extension to copy contents inside <pre> and <code> tags",
   "private": true,
   "author": "Ice Lam",

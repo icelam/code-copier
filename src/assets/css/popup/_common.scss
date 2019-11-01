@@ -1,9 +1,9 @@
 @import './color';
 @import './variables';
 
-html,
 body {
   width: $body-width;
+  overflow-x: hidden; /* Firefox scrollbar hack */
   max-height: 435px;
   background-color: $color-body;
   color: $color-body-text;
