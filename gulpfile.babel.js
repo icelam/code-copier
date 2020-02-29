@@ -29,7 +29,8 @@ const buildDev = () => {
           sourceMaps: false,
           presets: ['@babel/preset-env'],
           plugins: [
-            ['@babel/transform-runtime']
+            ['@babel/transform-runtime'],
+            ['transform-vue-template']
           ],
           global: true,
           ignore: [/[/\\]core-js/, /@babel[/\\]runtime/],
@@ -71,7 +72,8 @@ const buildProd = () => {
       .transform('babelify', {
         presets: ['@babel/preset-env'],
         plugins: [
-          ['@babel/transform-runtime']
+          ['@babel/transform-runtime'],
+          ['transform-vue-template']
         ],
         comments: false,
         global: true,

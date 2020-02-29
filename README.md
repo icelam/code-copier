@@ -15,3 +15,9 @@
 ## Download Link ##
 * [Download Chrome version](https://chrome.google.com/webstore/detail/code-copier/polidkhcaghmmijeemenkiloblpdfphp)
 * [Download Firefox version](https://addons.mozilla.org/en-US/firefox/addon/code-copier/)
+
+## Development Notes ##
+* Setup: `npm install`
+* Development: `npm run dev`
+* Build: `npm run build`
+* Build and zip: `npm run pack`

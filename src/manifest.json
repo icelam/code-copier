@@ -3,7 +3,7 @@
   "name": "Code Copier",
   "author": "Ice Lam",
   "homepage_url": "https://github.com/icelam/code-copier",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Code Copier - Extension to copy contents inside <code> and <pre> tags with right click",
   "icons":
   {
@@ -38,5 +38,5 @@
     "browser_style": true,
     "chrome_style": true
   },
-  "content_security_policy": "default-src 'self'; script-src 'self' 'unsafe-eval' blob:; style-src * 'unsafe-inline'; font-src *; object-src 'none'"
+  "content_security_policy": "default-src 'self'; script-src 'self' blob:; style-src * 'unsafe-inline'; font-src *; object-src 'none'"
 }
